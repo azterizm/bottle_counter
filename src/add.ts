@@ -1,6 +1,6 @@
-import { LocalStorage } from 'node-localstorage'
+import storage from './config'
+
 ;(async () => {
-  const storage = new LocalStorage('./bottles')
   const time = new Date().toLocaleDateString().replaceAll('/', '_')
   const value = storage.getItem(time)
   if (value) {

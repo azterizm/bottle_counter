@@ -1,6 +1,5 @@
-import { LocalStorage } from 'node-localstorage'
+import s from './config'
 
-const s = new LocalStorage('./bottles')
 const pargs = process.argv
 
 const all = pargs.includes('--show-all') || pargs.includes('-a')

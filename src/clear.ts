@@ -1,7 +1,6 @@
-import { LocalStorage } from "node-localstorage"
+import s from './config'
 
-(async () => {
-	const s = new LocalStorage('./bottles')
-	s.clear()
-	process.exit(1)
+;(async () => {
+  s.clear()
+  process.exit(1)
 })()
